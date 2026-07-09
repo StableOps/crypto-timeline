@@ -1,0 +1,328 @@
+{
+  "icons": {
+    "protocol": "<path d=\"M12 3 3 8l9 5 9-5-9-5Z\"/><path d=\"M3 13l9 5 9-5\"/>",
+    "regulation": "<path d=\"M12 3 3 10h18L12 3Z\"/><path d=\"M6 10v10\"/><path d=\"M18 10v10\"/><path d=\"M4 21h16\"/>",
+    "security": "<path d=\"M12 3l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6l7-3Z\"/><path d=\"M9 12l2 2 4-4\"/>",
+    "market": "<rect x=\"4\" y=\"10\" width=\"3\" height=\"8\" rx=\"0.6\"/><rect x=\"10.5\" y=\"5\" width=\"3\" height=\"13\" rx=\"0.6\"/><rect x=\"17\" y=\"8\" width=\"3\" height=\"10\" rx=\"0.6\"/>",
+    "stablecoin": "<circle cx=\"12\" cy=\"12\" r=\"8.5\"/><path d=\"M8 10.5h8\"/><path d=\"M8 13.5h8\"/>",
+    "adoption": "<path d=\"M5 21V4\"/><path d=\"M5 5h13l-3 3.5L18 12H5\"/>"
+  },
+  "categories": [
+    { "key": "protocol", "label": "协议里程碑", "color": "#0d9488" },
+    { "key": "regulation", "label": "监管政策", "color": "#2563eb" },
+    { "key": "security", "label": "安全事件", "color": "#e11d48" },
+    { "key": "market", "label": "市场周期", "color": "#b45309" },
+    { "key": "stablecoin", "label": "稳定币", "color": "#16a34a" },
+    { "key": "adoption", "label": "机构与采用", "color": "#a21caf" }
+  ],
+  "events": [
+    {
+      "date": "2009-01-03",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "创世区块诞生",
+      "desc": "中本聪挖出比特币第一个区块，区块奖励 50 BTC，工作量证明公链正式面世。"
+    },
+    {
+      "date": "2010-05-22",
+      "cat": "protocol",
+      "imp": "minor",
+      "title": "比特币披萨日",
+      "desc": "程序员用 1 万枚比特币购买两块披萨，成为比特币首次真实世界消费记录。"
+    },
+    {
+      "date": "2011-06-19",
+      "cat": "security",
+      "imp": "minor",
+      "title": "Mt. Gox 首次遭黑客入侵",
+      "desc": "全球最大比特币交易所首次发生安全事故，为其后续更大规模崩溃埋下伏笔。"
+    },
+    {
+      "date": "2012-11-28",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "比特币首次减半",
+      "desc": "区块奖励由 50 BTC 降至 25 BTC，比特币通胀率首次显著降低。"
+    },
+    {
+      "date": "2013-12-05",
+      "cat": "regulation",
+      "imp": "major",
+      "title": "中国五部委规范比特币",
+      "desc": "央行等五部委发布通知，明确比特币不具有货币属性，禁止金融机构提供相关服务。"
+    },
+    {
+      "date": "2014-02-25",
+      "cat": "security",
+      "imp": "major",
+      "title": "Mt. Gox 宣布破产",
+      "desc": "约 85 万枚比特币下落不明，一度占全球流通量 7%，成为行业早期最大信任危机。"
+    },
+    {
+      "date": "2015-07-30",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "以太坊主网上线",
+      "desc": "智能合约平台以太坊正式启动，开启可编程区块链时代，为 DeFi、NFT 奠定基础。"
+    },
+    {
+      "date": "2015-11-09",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "ERC-20 代币标准提出",
+      "desc": "以太坊开发者正式提出 ERC-20 标准草案，统一了智能合约代币接口，成为 ICO 与 DeFi 生态的基石。"
+    },
+    {
+      "date": "2016-06-17",
+      "cat": "security",
+      "imp": "major",
+      "title": "The DAO 被黑致以太坊硬分叉",
+      "desc": "攻击者利用合约漏洞盗取约 360 万枚 ETH，社区推动强制硬分叉，分裂出 ETH 与 ETC。"
+    },
+    {
+      "date": "2016-07-09",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "比特币第二次减半",
+      "desc": "区块奖励由 25 BTC 降至 12.5 BTC，新增发行速度继续放缓。"
+    },
+    {
+      "date": "2017-09-04",
+      "cat": "regulation",
+      "imp": "major",
+      "title": "中国叫停 ICO",
+      "desc": "七部委联合发文取缔代币发行融资活动，境内交易所随后陆续关闭或迁移海外。"
+    },
+    {
+      "date": "2017-12-17",
+      "cat": "market",
+      "imp": "major",
+      "title": "比特币触及当时历史高点",
+      "desc": "在 ICO 与散户投机热潮推动下价格逼近 2 万美元，随后进入长达一年的深度回调。"
+    },
+    {
+      "date": "2018-01-15",
+      "cat": "market",
+      "imp": "minor",
+      "title": "加密寒冬开启",
+      "desc": "泡沫破裂后加密货币总市值一年内蒸发超过 80%，行业进入长期低迷调整期。"
+    },
+    {
+      "date": "2020-03-12",
+      "cat": "market",
+      "imp": "major",
+      "title": "「黑色星期四」加密市场暴跌",
+      "desc": "新冠疫情引发全球金融市场恐慌，比特币单日暴跌近 50%，以太坊跌至约 90 美元。"
+    },
+    {
+      "date": "2020-05-11",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "比特币第三次减半",
+      "desc": "区块奖励由 12.5 BTC 降至 6.25 BTC，供应紧缩效应开始积累。"
+    },
+    {
+      "date": "2020-08-11",
+      "cat": "adoption",
+      "imp": "major",
+      "title": "MicroStrategy 率先配置比特币储备",
+      "desc": "上市公司首次大规模购入比特币作为资产负债表储备，此后多家公司效仿。"
+    },
+    {
+      "date": "2020-09-01",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "DeFi Summer 爆发",
+      "desc": "流动性挖矿模式兴起，去中心化交易所与借贷协议锁仓量数月内暴涨数十倍。"
+    },
+    {
+      "date": "2021-03-11",
+      "cat": "adoption",
+      "imp": "major",
+      "title": "Beeple NFT 拍出 6900 万美元",
+      "desc": "佳士得拍卖行首次接受加密货币支付，Beeple 的数码作品以 6900 万美元成交，NFT 进入主流视野。"
+    },
+    {
+      "date": "2021-04-14",
+      "cat": "adoption",
+      "imp": "major",
+      "title": "Coinbase 纳斯达克直接上市",
+      "desc": "美国首家上市的主流加密交易所，挂牌首日估值一度突破 860 亿美元。"
+    },
+    {
+      "date": "2021-06-09",
+      "cat": "adoption",
+      "imp": "major",
+      "title": "萨尔瓦多将比特币列为法定货币",
+      "desc": "全球首个赋予比特币法定货币地位的主权国家，尝试将其用于日常支付与汇款。"
+    },
+    {
+      "date": "2021-08-05",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "以太坊伦敦升级 / EIP-1559 上线",
+      "desc": "EIP-1559 引入基础费用销毁机制，改变交易费定价方式，为 ETH 带来通缩压力。"
+    },
+    {
+      "date": "2021-09-24",
+      "cat": "regulation",
+      "imp": "major",
+      "title": "中国全面禁止加密货币交易与挖矿",
+      "desc": "十部委联合发文，明确境内加密货币相关业务均属非法金融活动。"
+    },
+    {
+      "date": "2021-11-10",
+      "cat": "market",
+      "imp": "major",
+      "title": "比特币创下当时历史高点",
+      "desc": "价格触及约 6.9 万美元，机构资金与杠杆交易共同推高市场情绪。"
+    },
+    {
+      "date": "2022-02-02",
+      "cat": "security",
+      "imp": "minor",
+      "title": "Wormhole 跨链桥被黑",
+      "desc": "攻击者利用以太坊与 Solana 间跨链桥漏洞窃取约 3.2 亿美元资产。"
+    },
+    {
+      "date": "2022-03-23",
+      "cat": "security",
+      "imp": "major",
+      "title": "Ronin Network 遭朝鲜黑客攻击",
+      "desc": "Axie Infinity 侧链验证节点被攻破，约 6.25 亿美元资产被盗，后归因于 Lazarus 组织。"
+    },
+    {
+      "date": "2022-05-09",
+      "cat": "stablecoin",
+      "imp": "major",
+      "title": "Terra/LUNA 算法稳定币崩盘",
+      "desc": "UST 脱离锚定并进入死亡螺旋，数百亿美元市值数日内蒸发，成为行业系统性风险转折点。"
+    },
+    {
+      "date": "2022-09-15",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "以太坊完成 The Merge",
+      "desc": "从工作量证明转向权益证明共识机制，能耗降低约 99.9%，是区块链史上规模最大的升级之一。"
+    },
+    {
+      "date": "2022-11-11",
+      "cat": "market",
+      "imp": "major",
+      "title": "FTX 申请破产",
+      "desc": "全球第二大交易所因挪用客户资金骤然崩塌，创始人后被判欺诈罪，引发行业连锁信任危机。"
+    },
+    {
+      "date": "2023-01-21",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "Ordinals 协议在比特币主网上线",
+      "desc": "基于 Taproot 升级，Ordinals 协议将 NFT 引入比特币生态，催生铭文热潮。"
+    },
+    {
+      "date": "2023-03-11",
+      "cat": "stablecoin",
+      "imp": "minor",
+      "title": "硅谷银行倒闭引发 USDC 短暂脱锚",
+      "desc": "Circle 约 33 亿美元储备金被困于倒闭银行，USDC 一度跌至 0.87 美元，联邦介入后迅速恢复锚定。"
+    },
+    {
+      "date": "2023-06-05",
+      "cat": "regulation",
+      "imp": "major",
+      "title": "SEC 起诉币安与 Coinbase",
+      "desc": "美国证券交易委员会同月对两大交易所提起诉讼，指控其未注册证券交易平台。"
+    },
+    {
+      "date": "2023-11-21",
+      "cat": "regulation",
+      "imp": "major",
+      "title": "CZ 认罪，币安支付 43 亿美元罚款",
+      "desc": "币安创始人就违反反洗钱规定认罪并卸任 CEO，与美国司法部达成创纪录和解。"
+    },
+    {
+      "date": "2024-01-10",
+      "cat": "adoption",
+      "imp": "major",
+      "title": "SEC 批准首批比特币现货 ETF",
+      "desc": "贝莱德、富达等多只比特币现货 ETF 获准在美国上市，为传统资金进入加密市场打开合规通道。"
+    },
+    {
+      "date": "2024-04-20",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "比特币完成第四次减半",
+      "desc": "区块奖励由 6.25 BTC 降至 3.125 BTC，新增发行速度进一步放缓。"
+    },
+    {
+      "date": "2024-05-31",
+      "cat": "security",
+      "imp": "minor",
+      "title": "DMM Bitcoin 遭黑客攻击",
+      "desc": "日本交易所被盗约 3.08 亿美元，后被追溯为朝鲜 Lazarus 关联组织所为。"
+    },
+    {
+      "date": "2024-07-23",
+      "cat": "adoption",
+      "imp": "major",
+      "title": "以太坊现货 ETF 上线交易",
+      "desc": "继比特币之后，多只以太坊现货 ETF 获批并在美国交易所上市。"
+    },
+    {
+      "date": "2025-02-21",
+      "cat": "security",
+      "imp": "major",
+      "title": "Bybit 遭史上最大规模加密盗窃案",
+      "desc": "朝鲜 Lazarus 组织篡改多签钱包签名界面，从冷钱包窃取约 14.6 亿美元资产。"
+    },
+    {
+      "date": "2025-03-06",
+      "cat": "adoption",
+      "imp": "major",
+      "title": "美国设立战略比特币储备",
+      "desc": "将司法部没收的约 20 万枚比特币纳入国家储备并承诺不出售，开创主权国家配置加密资产先例。"
+    },
+    {
+      "date": "2025-06-05",
+      "cat": "stablecoin",
+      "imp": "major",
+      "title": "Circle 在纽交所上市",
+      "desc": "USDC 发行商完成 IPO 并挂牌纽交所，被视为稳定币行业迈入主流资本市场的标志性事件。"
+    },
+    {
+      "date": "2025-07-18",
+      "cat": "regulation",
+      "imp": "major",
+      "title": "GENIUS 法案签署成为法律",
+      "desc": "美国首部联邦层面稳定币监管框架正式生效，要求支付型稳定币以高流动性资产全额支持储备。"
+    },
+    {
+      "date": "2025-08-01",
+      "cat": "regulation",
+      "imp": "minor",
+      "title": "香港稳定币发牌制度正式实施",
+      "desc": "《稳定币条例》生效，要求在港从事相关发行活动的机构取得牌照。"
+    },
+    {
+      "date": "2025-09-02",
+      "cat": "regulation",
+      "imp": "major",
+      "title": "SEC 与 CFTC 联合放行现货加密产品",
+      "desc": "两大监管机构联合声明，明确现行法律不禁止全国性交易所上市比特币与以太坊现货产品。"
+    },
+    {
+      "date": "2025-10-11",
+      "cat": "market",
+      "imp": "major",
+      "title": "加密市场「黑色星期二」",
+      "desc": "宏观数据不及预期叠加杠杆集中平仓，单日全网爆仓超 190 亿美元，比特币 24 小时内下跌超 13%。"
+    },
+    {
+      "date": "2026-05-01",
+      "cat": "regulation",
+      "imp": "minor",
+      "title": "《数字资产市场清晰法案》推进关键投票",
+      "desc": "美国参议院银行事务委员会以 15:9 通过程序性投票，为加密市场结构联邦立法铺路。"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "site": {
+    "title": "Crypto Timeline",
+    "subtitle": "Trace the evolution of the crypto industry through protocol upgrades, regulatory developments, security incidents, and market cycles.",
+    "footer": "Edit this data on GitHub"
+  },
+  "stats": {
+    "events": "Events",
+    "span": "Time Span",
+    "categories": "Categories"
+  }
+}

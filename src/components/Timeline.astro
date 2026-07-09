@@ -1,0 +1,203 @@
+---
+import icon from '../assets/icon-512.png'
+import zh from '../data/zh.json'
+import en from '../data/en.json'
+import { t, type Locale } from '../i18n'
+
+export type Props = { locale: Locale }
+const { locale } = Astro.props
+const { icons, categories, events } = locale === 'zh' ? zh : en
+const catMeta = Object.fromEntries(categories.map((c) => [c.key, c]))
+
+const years = events.map((e) => parseInt(e.date.slice(0, 4)))
+const statsHtml = [
+  { num: events.length, label: t(locale, 'stats.events') },
+  { num: `${Math.min(...years)}–${Math.max(...years)}`, label: t(locale, 'stats.span') },
+  { num: categories.length, label: t(locale, 'stats.categories') },
+]
+  .map(
+    (s) =>
+      `<div class="bg-white/70 border border-[rgba(20,23,31,0.08)] rounded-xl px-[18px] py-3 backdrop-blur-md">
+        <span class="font-mono font-semibold text-lg block">${s.num}</span>
+        <span class="text-[11.5px] text-[#9aa0ac] mt-0.5 block">${s.label}</span>
+      </div>`
+  )
+  .join('')
+
+const altLang: Locale = locale === 'zh' ? 'en' : 'zh'
+const altHref = altLang === 'zh' ? '/zh/' : '/'
+
+const byYear = {}
+events.forEach((e) => {
+  const y = e.date.slice(0, 4)
+  ;(byYear[y] = byYear[y] || []).push(e)
+})
+
+const rows = []
+Object.keys(byYear)
+  .sort((a, b) => a - b)
+  .forEach((y) => {
+    rows.push({ type: 'divider', year: y })
+    byYear[y]
+      .sort((a, b) => a.date.localeCompare(b.date))
+      .forEach((e) => {
+        rows.push({ type: 'item', e, align: rows.filter((r) => r.type === 'item').length % 2 === 0 ? 'left' : 'right' })
+      })
+  })
+
+function lineStyle(i) {
+  return 'top:0;bottom:0'
+}
+
+const gridClass =
+  'grid grid-cols-[1fr_56px_1fr] gap-x-[22px] max-md:grid-cols-[44px_1fr] max-md:gap-x-[14px] relative pb-[26px]'
+const markerClass = 'relative flex justify-center col-start-2 max-md:col-start-1'
+const yearPillClass =
+  'font-mono font-semibold text-sm text-white bg-[#15171f] px-4 py-1.5 rounded-full relative z-10 shadow-[0_4px_14px_rgba(20,23,31,0.18)] col-start-2 max-md:col-start-1 max-md:justify-self-start max-md:-ml-0.5 justify-self-center'
+const badgeBase =
+  'rounded-full bg-white border-2 flex items-center justify-center relative z-10 shadow-[0_2px_8px_rgba(20,23,31,0.08)]'
+const cardBase =
+  'bg-white/70 backdrop-blur-md border rounded-2xl p-4 max-md:col-start-2 motion-safe:transition-[transform,box-shadow] motion-safe:duration-200 motion-safe:hover:-translate-y-[3px] motion-safe:hover:shadow-[0_12px_30px_rgba(20,23,31,0.1)]'
+---
+
+<html lang={locale === 'zh' ? 'zh-CN' : 'en'}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{t(locale, 'site.title')}</title>
+    <link rel="icon" type="image/png" href={icon.src} />
+    <link rel="apple-touch-icon" href={icon.src} />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="alternate" hreflang="en" href="/" />
+    <link rel="alternate" hreflang="zh" href="/zh/" />
+  </head>
+  <body>
+    <div
+      class="min-h-screen pb-[90px] font-body text-[#15171f]"
+      id="ctv2-root"
+    >
+      <header class="max-w-4xl text-center mx-auto px-6 pt-[68px] pb-9">
+        <div class="flex items-center justify-center gap-3 flex-wrap mb-[22px]">
+          <a
+            href={altHref}
+            class="text-sm font-medium hover:text-[#6366f1] transition-colors"
+          >
+            {altLang === 'zh' ? '中文' : 'English'}
+          </a>
+        </div>
+        <h1
+          class="font-display font-bold text-[clamp(34px,5.2vw,48px)] leading-[1.12] tracking-[-0.015em] m-0 mb-4"
+        >
+          {t(locale, 'site.title')}
+        </h1>
+        <p
+          class="text-[#5b6270] text-base leading-[1.7] m-0 mb-[30px]"
+        >
+          {t(locale, 'site.subtitle')}
+        </p>
+        <div class="flex gap-7 justify-center flex-wrap" set:html={statsHtml} />
+      </header>
+
+      <div class="max-w-7xl mx-auto mt-2 px-6 pt-2">
+        {
+          rows.map((row, i) => {
+            const line = `<div style="position:absolute;left:50%;width:2px;background:rgba(20,23,31,0.14);transform:translateX(-50%);${lineStyle(i)}"></div>`
+
+            if (row.type === 'divider') {
+              return (
+                <div
+                  class={`${gridClass} motion-safe:opacity-0 motion-safe:translate-y-4 motion-safe:transition-all motion-safe:duration-[.55s]`}
+                  data-observe
+                >
+                  <div class={`${markerClass} row-start-1`} set:html={line} />
+                  <div class={`${yearPillClass} row-start-1 self-center`}>{row.year}</div>
+                </div>
+              )
+            }
+
+            const c = catMeta[row.e.cat]
+            const minor = row.e.imp === 'minor'
+            const cardCol = row.align === 'right' ? 'col-start-3' : 'col-start-1'
+            const badgeSize = minor ? 'w-[26px] h-[26px]' : 'w-9 h-9'
+            const iconSize = minor ? 'w-3 h-3' : 'w-[17px] h-[17px]'
+            const cardVariant = 'border-[rgba(20,23,31,0.08)]'
+
+            return (
+              <div
+                class={`${gridClass} motion-safe:opacity-0 motion-safe:translate-y-4 motion-safe:transition-all motion-safe:duration-[.55s]`}
+                data-observe
+              >
+                <div class={`${markerClass} row-start-1`}>
+                  <div set:html={line} />
+                  <div
+                    class={`${badgeBase} ${badgeSize}`}
+                    style={`border-color:${c.color};color:${c.color}`}
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class={iconSize}
+                      set:html={icons[row.e.cat]}
+                    />
+                  </div>
+                </div>
+                <div class={`${cardBase} ${cardCol} row-start-1 ${cardVariant}`}>
+                  <div class="flex items-center gap-2 flex-wrap mb-2">
+                    <span class="font-mono text-[11.5px] text-[#9aa0ac]">{row.e.date}</span>
+                    <span
+                      class="inline-flex items-center text-[11px] font-medium px-[9px] py-0.5 rounded-full"
+                      style={`background:color-mix(in srgb,${c.color} 12%,white);color:${c.color}`}
+                    >
+                      {c.label}
+                    </span>
+                    
+                  </div>
+                  <h3 class="font-display font-semibold text-[16.5px] m-0 mb-1.5">{row.e.title}</h3>
+                  <p class="text-[13.5px] leading-[1.65] text-[#5b6270] m-0">{row.e.desc}</p>
+                </div>
+              </div>
+            )
+          })
+        }
+      </div>
+
+      <div
+        class="max-w-[860px] mx-auto mt-[30px] px-6 pt-[22px] border-t border-[rgba(20,23,31,0.08)] text-xs text-[#9aa0ac] text-center"
+      >
+        <a
+          href="https://github.com/StableOps/crypto-timeline"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-[#6366f1] transition-colors"
+        >
+          {t(locale, 'site.footer')}
+        </a>
+      </div>
+    </div>
+
+    <script>
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.style.opacity = '1'
+                entry.target.style.transform = 'translateY(0)'
+                observer.unobserve(entry.target)
+              }
+            })
+          },
+          { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+        )
+        document.querySelectorAll('[data-observe]').forEach((el) => observer.observe(el))
+      }
+    </script>
+  </body>
+</html>

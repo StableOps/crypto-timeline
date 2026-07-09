@@ -1,0 +1,328 @@
+{
+  "icons": {
+    "protocol": "<path d=\"M12 3 3 8l9 5 9-5-9-5Z\"/><path d=\"M3 13l9 5 9-5\"/>",
+    "regulation": "<path d=\"M12 3 3 10h18L12 3Z\"/><path d=\"M6 10v10\"/><path d=\"M18 10v10\"/><path d=\"M4 21h16\"/>",
+    "security": "<path d=\"M12 3l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6l7-3Z\"/><path d=\"M9 12l2 2 4-4\"/>",
+    "market": "<rect x=\"4\" y=\"10\" width=\"3\" height=\"8\" rx=\"0.6\"/><rect x=\"10.5\" y=\"5\" width=\"3\" height=\"13\" rx=\"0.6\"/><rect x=\"17\" y=\"8\" width=\"3\" height=\"10\" rx=\"0.6\"/>",
+    "stablecoin": "<circle cx=\"12\" cy=\"12\" r=\"8.5\"/><path d=\"M8 10.5h8\"/><path d=\"M8 13.5h8\"/>",
+    "adoption": "<path d=\"M5 21V4\"/><path d=\"M5 5h13l-3 3.5L18 12H5\"/>"
+  },
+  "categories": [
+    { "key": "protocol", "label": "Protocol Milestones", "color": "#0d9488" },
+    { "key": "regulation", "label": "Regulation", "color": "#2563eb" },
+    { "key": "security", "label": "Security Incidents", "color": "#e11d48" },
+    { "key": "market", "label": "Market Cycles", "color": "#b45309" },
+    { "key": "stablecoin", "label": "Stablecoins", "color": "#16a34a" },
+    { "key": "adoption", "label": "Adoption", "color": "#a21caf" }
+  ],
+  "events": [
+    {
+      "date": "2009-01-03",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "Genesis Block Mined",
+      "desc": "Satoshi Nakamoto mined Bitcoin's first block, earning a 50 BTC reward and launching the first proof-of-work public blockchain."
+    },
+    {
+      "date": "2010-05-22",
+      "cat": "protocol",
+      "imp": "minor",
+      "title": "Bitcoin Pizza Day",
+      "desc": "A programmer paid 10,000 BTC for two pizzas, marking the first real-world purchase using Bitcoin."
+    },
+    {
+      "date": "2011-06-19",
+      "cat": "security",
+      "imp": "minor",
+      "title": "First Mt. Gox Hack",
+      "desc": "The world's largest Bitcoin exchange suffered its first security breach, foreshadowing a much larger collapse to come."
+    },
+    {
+      "date": "2012-11-28",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "First Bitcoin Halving",
+      "desc": "Block reward halved from 50 to 25 BTC, marking Bitcoin's first significant supply reduction."
+    },
+    {
+      "date": "2013-12-05",
+      "cat": "regulation",
+      "imp": "major",
+      "title": "China Regulates Bitcoin",
+      "desc": "Five Chinese regulatory bodies declared that Bitcoin is not a currency and barred financial institutions from handling it."
+    },
+    {
+      "date": "2014-02-25",
+      "cat": "security",
+      "imp": "major",
+      "title": "Mt. Gox Collapse",
+      "desc": "Approximately 850,000 BTC — 7% of all Bitcoin at the time — went missing, triggering the industry's first major crisis of confidence."
+    },
+    {
+      "date": "2015-07-30",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "Ethereum Mainnet Launch",
+      "desc": "Ethereum's smart-contract platform went live, ushering in programmable blockchain and laying the foundation for DeFi and NFTs."
+    },
+    {
+      "date": "2015-11-09",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "ERC-20 Token Standard Proposed",
+      "desc": "Ethereum developers formally proposed the ERC-20 standard, unifying the token interface and laying the groundwork for ICOs and DeFi."
+    },
+    {
+      "date": "2016-06-17",
+      "cat": "security",
+      "imp": "major",
+      "title": "The DAO Hack & Ethereum Hard Fork",
+      "desc": "An attacker drained ~3.6M ETH via a smart-contract flaw. The subsequent hard fork split Ethereum into ETH and ETC."
+    },
+    {
+      "date": "2016-07-09",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "Second Bitcoin Halving",
+      "desc": "Block reward halved from 25 to 12.5 BTC, further slowing the rate of new supply."
+    },
+    {
+      "date": "2017-09-04",
+      "cat": "regulation",
+      "imp": "major",
+      "title": "China Bans ICOs",
+      "desc": "Seven government agencies outlawed token fundraising; Chinese exchanges soon shut down or moved offshore."
+    },
+    {
+      "date": "2017-12-17",
+      "cat": "market",
+      "imp": "major",
+      "title": "Bitcoin All-Time High (2017)",
+      "desc": "Driven by the ICO frenzy and retail speculation, Bitcoin approached $20K before entering a year-long bear market."
+    },
+    {
+      "date": "2018-01-15",
+      "cat": "market",
+      "imp": "minor",
+      "title": "Crypto Winter Begins",
+      "desc": "After the bubble burst, total crypto market cap lost over 80% in a year, ushering in a prolonged downturn."
+    },
+    {
+      "date": "2020-03-12",
+      "cat": "market",
+      "imp": "major",
+      "title": "Black Thursday: COVID Crash",
+      "desc": "COVID-19 triggered global panic; Bitcoin plunged nearly 50% in a single day, with Ethereum dropping to ~$90."
+    },
+    {
+      "date": "2020-05-11",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "Third Bitcoin Halving",
+      "desc": "Block reward halved from 12.5 to 6.25 BTC, setting the stage for the next bull run."
+    },
+    {
+      "date": "2020-08-11",
+      "cat": "adoption",
+      "imp": "major",
+      "title": "MicroStrategy Adopts Bitcoin Treasury",
+      "desc": "The first public company to buy Bitcoin in bulk as a treasury reserve, setting a precedent later followed by many others."
+    },
+    {
+      "date": "2020-09-01",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "DeFi Summer",
+      "desc": "Liquidity mining ignited a boom; TVL on decentralized exchanges and lending protocols surged tenfold in months."
+    },
+    {
+      "date": "2021-03-11",
+      "cat": "adoption",
+      "imp": "major",
+      "title": "Beeple NFT Sells for $69M",
+      "desc": "Christie's held its first crypto-denominated auction; Beeple's digital artwork sold for $69M, catapulting NFTs into the mainstream."
+    },
+    {
+      "date": "2021-04-14",
+      "cat": "adoption",
+      "imp": "major",
+      "title": "Coinbase Lists on Nasdaq",
+      "desc": "The first major US crypto exchange to go public, reaching an $86B valuation on its debut."
+    },
+    {
+      "date": "2021-06-09",
+      "cat": "adoption",
+      "imp": "major",
+      "title": "El Salvador Makes Bitcoin Legal Tender",
+      "desc": "The first sovereign nation to adopt Bitcoin as legal tender, aiming to use it for payments and remittances."
+    },
+    {
+      "date": "2021-08-05",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "London Hard Fork / EIP-1559",
+      "desc": "EIP-1559 introduced a base fee burning mechanism, reforming Ethereum's fee market and adding deflationary pressure to ETH."
+    },
+    {
+      "date": "2021-09-24",
+      "cat": "regulation",
+      "imp": "major",
+      "title": "China Bans All Crypto Trading & Mining",
+      "desc": "Ten agencies jointly declared all crypto-related activities in China to be illegal financial operations."
+    },
+    {
+      "date": "2021-11-10",
+      "cat": "market",
+      "imp": "major",
+      "title": "Bitcoin All-Time High (2021)",
+      "desc": "Bitcoin peaked at ~$69K, fueled by institutional capital and leveraged trading."
+    },
+    {
+      "date": "2022-02-02",
+      "cat": "security",
+      "imp": "minor",
+      "title": "Wormhole Bridge Hack",
+      "desc": "An attacker exploited a cross-chain bridge vulnerability between Ethereum and Solana, stealing ~$320M."
+    },
+    {
+      "date": "2022-03-23",
+      "cat": "security",
+      "imp": "major",
+      "title": "Ronin Network Hack by Lazarus Group",
+      "desc": "Axie Infinity's sidechain validators were compromised; ~$625M stolen, later attributed to North Korea's Lazarus Group."
+    },
+    {
+      "date": "2022-05-09",
+      "cat": "stablecoin",
+      "imp": "major",
+      "title": "Terra / LUNA Collapse",
+      "desc": "UST de-pegged and entered a death spiral, wiping out tens of billions in days — a systemic turning point for the industry."
+    },
+    {
+      "date": "2022-09-15",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "Ethereum The Merge",
+      "desc": "Ethereum transitioned from proof-of-work to proof-of-stake, cutting energy consumption by ~99.9% in one of crypto's most significant upgrades."
+    },
+    {
+      "date": "2022-11-11",
+      "cat": "market",
+      "imp": "major",
+      "title": "FTX Files for Bankruptcy",
+      "desc": "The world's second-largest exchange collapsed after misusing customer funds; its founder was later convicted of fraud."
+    },
+    {
+      "date": "2023-01-21",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "Ordinals Protocol Launches on Bitcoin",
+      "desc": "Built on the Taproot upgrade, Ordinals brought NFT-like inscriptions to Bitcoin, sparking the BRC-20 and inscription ecosystem."
+    },
+    {
+      "date": "2023-03-11",
+      "cat": "stablecoin",
+      "imp": "minor",
+      "title": "SVB Collapse & USDC De-peg",
+      "desc": "Circle's $3.3B in reserves were trapped in the failed bank; USDC dropped to $0.87 before federal intervention restored the peg."
+    },
+    {
+      "date": "2023-06-05",
+      "cat": "regulation",
+      "imp": "major",
+      "title": "SEC Sues Binance & Coinbase",
+      "desc": "The SEC sued both exchanges in the same month, alleging they operated unregistered securities trading platforms."
+    },
+    {
+      "date": "2023-11-21",
+      "cat": "regulation",
+      "imp": "major",
+      "title": "CZ Pleads Guilty; Binance Pays $4.3B",
+      "desc": "Binance's founder pleaded guilty to AML violations, stepped down as CEO, and the company reached a record settlement with the DOJ."
+    },
+    {
+      "date": "2024-01-10",
+      "cat": "adoption",
+      "imp": "major",
+      "title": "Spot Bitcoin ETFs Approved",
+      "desc": "BlackRock, Fidelity, and others received approval to list spot Bitcoin ETFs in the US, opening a compliant channel for traditional capital."
+    },
+    {
+      "date": "2024-04-20",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "Fourth Bitcoin Halving",
+      "desc": "Block reward halved from 6.25 to 3.125 BTC, further slowing the rate of new supply issuance."
+    },
+    {
+      "date": "2024-05-31",
+      "cat": "security",
+      "imp": "minor",
+      "title": "DMM Bitcoin Hack",
+      "desc": "A Japanese exchange lost ~$308M, later attributed to North Korea's Lazarus-affiliated group."
+    },
+    {
+      "date": "2024-07-23",
+      "cat": "adoption",
+      "imp": "major",
+      "title": "Spot Ethereum ETFs Launch",
+      "desc": "Following Bitcoin, spot Ethereum ETFs received approval and began trading on US exchanges."
+    },
+    {
+      "date": "2025-02-21",
+      "cat": "security",
+      "imp": "major",
+      "title": "Bybit: Largest Crypto Heist in History",
+      "desc": "North Korea's Lazarus Group manipulated a multi-sig wallet interface to steal ~$1.46B from cold storage — the largest single heist in crypto history."
+    },
+    {
+      "date": "2025-03-06",
+      "cat": "adoption",
+      "imp": "major",
+      "title": "US Strategic Bitcoin Reserve",
+      "desc": "The US integrated ~200K BTC seized by the DoJ into a national reserve with a no-sale commitment, setting a sovereign precedent."
+    },
+    {
+      "date": "2025-06-05",
+      "cat": "stablecoin",
+      "imp": "major",
+      "title": "Circle IPOs on NYSE",
+      "desc": "USDC issuer went public on the NYSE, marking the stablecoin industry's arrival in mainstream capital markets."
+    },
+    {
+      "date": "2025-07-18",
+      "cat": "regulation",
+      "imp": "major",
+      "title": "GENIUS Act Signed into Law",
+      "desc": "The first US federal stablecoin regulatory framework took effect, requiring payment stablecoins to be fully backed by high-liquidity assets."
+    },
+    {
+      "date": "2025-08-01",
+      "cat": "regulation",
+      "imp": "minor",
+      "title": "Hong Kong Stablecoin Licensing",
+      "desc": "Hong Kong's stablecoin ordinance took effect, requiring issuers operating in the territory to obtain a license."
+    },
+    {
+      "date": "2025-09-02",
+      "cat": "regulation",
+      "imp": "major",
+      "title": "SEC & CFTC Jointly Clear Spot Crypto Products",
+      "desc": "A joint statement confirmed that current US law does not prohibit national exchanges from listing spot Bitcoin and Ethereum products."
+    },
+    {
+      "date": "2025-10-11",
+      "cat": "market",
+      "imp": "major",
+      "title": "Crypto Black Tuesday",
+      "desc": "Missed macro estimates and cascading liquidations triggered over $19B in forced closures in a single day; Bitcoin dropped >13% in 24 hours."
+    },
+    {
+      "date": "2026-05-01",
+      "cat": "regulation",
+      "imp": "minor",
+      "title": "Digital Asset Market Clarity Act Advances",
+      "desc": "The Senate Banking Committee passed a procedural vote 15-9, paving the way for federal crypto market structure legislation."
+    }
+  ]
+}
