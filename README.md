@@ -1,30 +1,30 @@
 # Crypto Timeline
 
-加密行业关键节点时间线 — 从创世区块到稳定币立法，按时间脉络梳理协议升级、监管政策、安全事件与市场周期。
+A chronological timeline of crypto milestones — from the genesis block to stablecoin legislation, covering protocol upgrades, regulations, security incidents, and market cycles.
 
-## 开发
+## Development
 
 ```bash
 npm install
-npm run dev     # 开发服务器 http://localhost:4321
-npm run build   # 构建到 dist/
+npm run dev     # dev server at http://localhost:4321
+npm run build   # build to dist/
 ```
 
-## 添加事件
+## Adding Events
 
-编辑 `src/data/zh.json` 和 `src/data/en.json` 中的 `events` 数组，按日期排序即可。
+Edit the `events` array in `src/data/en.json` and `src/data/zh.json`.
 
-字段说明：
-- `date` — 事件日期，格式 `YYYY-MM-DD`
-- `cat` — 分类，可选 `protocol` `regulation` `security` `market` `stablecoin` `adoption`
-- `imp` — 重要性，`major` 或 `minor`
-- `title` — 事件标题
-- `desc` — 事件描述
+Fields:
+- `date` — event date, format `YYYY-MM-DD`
+- `cat` — category: `protocol` `regulation` `security` `market` `stablecoin` `adoption`
+- `imp` — importance: `major` or `minor`
+- `title` — event title
+- `desc` — event description
 
-## 多语言
+## Languages
 
-- `/` — 英文（默认）
-- `/zh/` — 中文
-- 浏览器语言为中文时自动跳转 `/zh/`
+- `/` — English (default)
+- `/zh/` — Chinese
+- Auto-redirects to `/zh/` if browser language is Chinese
 
-UI 文案在 `src/i18n/` 目录下。
+UI strings are in `src/i18n/`.
