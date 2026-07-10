@@ -1,19 +1,35 @@
 {
-  "icons": {
-    "protocol": "<path d=\"M12 3 3 8l9 5 9-5-9-5Z\"/><path d=\"M3 13l9 5 9-5\"/>",
-    "regulation": "<path d=\"M12 3 3 10h18L12 3Z\"/><path d=\"M6 10v10\"/><path d=\"M18 10v10\"/><path d=\"M4 21h16\"/>",
-    "security": "<path d=\"M12 3l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6l7-3Z\"/><path d=\"M9 12l2 2 4-4\"/>",
-    "market": "<rect x=\"4\" y=\"10\" width=\"3\" height=\"8\" rx=\"0.6\"/><rect x=\"10.5\" y=\"5\" width=\"3\" height=\"13\" rx=\"0.6\"/><rect x=\"17\" y=\"8\" width=\"3\" height=\"10\" rx=\"0.6\"/>",
-    "stablecoin": "<circle cx=\"12\" cy=\"12\" r=\"8.5\"/><path d=\"M8 10.5h8\"/><path d=\"M8 13.5h8\"/>",
-    "adoption": "<path d=\"M5 21V4\"/><path d=\"M5 5h13l-3 3.5L18 12H5\"/>"
-  },
   "categories": [
-    { "key": "protocol", "label": "Protocol Milestones", "color": "#0d9488" },
-    { "key": "regulation", "label": "Regulation", "color": "#2563eb" },
-    { "key": "security", "label": "Security Incidents", "color": "#e11d48" },
-    { "key": "market", "label": "Market Cycles", "color": "#b45309" },
-    { "key": "stablecoin", "label": "Stablecoins", "color": "#16a34a" },
-    { "key": "adoption", "label": "Adoption", "color": "#a21caf" }
+    {
+      "key": "protocol",
+      "label": "Protocol Milestones",
+      "color": "#0d9488"
+    },
+    {
+      "key": "regulation",
+      "label": "Regulation",
+      "color": "#2563eb"
+    },
+    {
+      "key": "security",
+      "label": "Security Incidents",
+      "color": "#e11d48"
+    },
+    {
+      "key": "market",
+      "label": "Market Cycles",
+      "color": "#b45309"
+    },
+    {
+      "key": "stablecoin",
+      "label": "Stablecoins",
+      "color": "#16a34a"
+    },
+    {
+      "key": "adoption",
+      "label": "Adoption",
+      "color": "#a21caf"
+    }
   ],
   "events": [
     {
@@ -45,6 +61,13 @@
       "desc": "Block reward halved from 50 to 25 BTC, marking Bitcoin's first significant supply reduction."
     },
     {
+      "date": "2013-10-02",
+      "cat": "regulation",
+      "imp": "major",
+      "title": "Silk Road Shut Down",
+      "desc": "The FBI seized the first major Bitcoin-denominated dark web marketplace and arrested its founder, marking law enforcement's first large-scale intervention in crypto."
+    },
+    {
       "date": "2013-12-05",
       "cat": "regulation",
       "imp": "major",
@@ -57,6 +80,13 @@
       "imp": "major",
       "title": "Mt. Gox Collapse",
       "desc": "Approximately 850,000 BTC — 7% of all Bitcoin at the time — went missing, triggering the industry's first major crisis of confidence."
+    },
+    {
+      "date": "2014-10-06",
+      "cat": "stablecoin",
+      "imp": "major",
+      "title": "Tether (USDT) Launches",
+      "desc": "The first major USD-pegged stablecoin issued tokens on Bitcoin's Omni Layer, pioneering the fiat-collateralized stablecoin model."
     },
     {
       "date": "2015-07-30",
@@ -87,6 +117,27 @@
       "desc": "Block reward halved from 25 to 12.5 BTC, further slowing the rate of new supply."
     },
     {
+      "date": "2016-08-02",
+      "cat": "security",
+      "imp": "major",
+      "title": "Bitfinex Hack",
+      "desc": "Attackers exploited a multi-sig wallet flaw to steal roughly 120,000 BTC, one of the largest exchange breaches at the time."
+    },
+    {
+      "date": "2017-08-01",
+      "cat": "protocol",
+      "imp": "minor",
+      "title": "Bitcoin Cash Hard Fork",
+      "desc": "A dispute over block-size scaling split the community, spinning Bitcoin Cash off from the Bitcoin mainchain."
+    },
+    {
+      "date": "2017-08-24",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "SegWit Activation",
+      "desc": "Bitcoin's Segregated Witness upgrade freed up block space for more transactions and paved the way for layer-2 solutions like the Lightning Network."
+    },
+    {
       "date": "2017-09-04",
       "cat": "regulation",
       "imp": "major",
@@ -108,11 +159,53 @@
       "desc": "After the bubble burst, total crypto market cap lost over 80% in a year, ushering in a prolonged downturn."
     },
     {
+      "date": "2018-01-26",
+      "cat": "security",
+      "imp": "major",
+      "title": "Coincheck Hack",
+      "desc": "Poor hot-wallet security at the Japanese exchange led to the theft of ~$530M in NEM tokens, then the largest exchange hack in history."
+    },
+    {
+      "date": "2018-05-31",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "TRON Mainnet Launch",
+      "desc": "TRON migrated from an Ethereum ERC-20 token to its own independent mainnet, later becoming a major settlement layer for USDT transfers."
+    },
+    {
+      "date": "2018-09-26",
+      "cat": "stablecoin",
+      "imp": "major",
+      "title": "USD Coin (USDC) Launches",
+      "desc": "The Centre consortium, backed by Circle and Coinbase, launched USDC as a benchmark for regulated, transparent stablecoins."
+    },
+    {
+      "date": "2018-11-02",
+      "cat": "protocol",
+      "imp": "minor",
+      "title": "Uniswap Launches",
+      "desc": "The first version of the constant-product AMM protocol went live, launching a new paradigm for decentralized exchanges."
+    },
+    {
+      "date": "2019-06-18",
+      "cat": "stablecoin",
+      "imp": "major",
+      "title": "Facebook Unveils Libra Whitepaper",
+      "desc": "The social media giant's plan for a global stablecoin triggered fierce regulatory pushback worldwide; the rebranded, scaled-down project was shut down in 2022."
+    },
+    {
       "date": "2020-03-12",
       "cat": "market",
       "imp": "major",
       "title": "Black Thursday: COVID Crash",
       "desc": "COVID-19 triggered global panic; Bitcoin plunged nearly 50% in a single day, with Ethereum dropping to ~$90."
+    },
+    {
+      "date": "2020-03-16",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "Solana Mainnet Beta Launch",
+      "desc": "Solana, built around a Proof-of-History mechanism for high throughput and low fees, launched its mainnet beta."
     },
     {
       "date": "2020-05-11",
@@ -134,6 +227,20 @@
       "imp": "major",
       "title": "DeFi Summer",
       "desc": "Liquidity mining ignited a boom; TVL on decentralized exchanges and lending protocols surged tenfold in months."
+    },
+    {
+      "date": "2020-10-21",
+      "cat": "adoption",
+      "imp": "major",
+      "title": "PayPal Enables Crypto Trading",
+      "desc": "The mainstream payments giant let users buy and sell Bitcoin and other crypto directly on its platform, pushing crypto toward everyday payment use."
+    },
+    {
+      "date": "2021-02-08",
+      "cat": "adoption",
+      "imp": "major",
+      "title": "Tesla Buys $1.5B in Bitcoin",
+      "desc": "Tesla disclosed adding Bitcoin to its corporate balance sheet, a landmark moment for large-cap corporate crypto allocation."
     },
     {
       "date": "2021-03-11",
@@ -178,6 +285,13 @@
       "desc": "Bitcoin peaked at ~$69K, fueled by institutional capital and leveraged trading."
     },
     {
+      "date": "2021-11-14",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "Bitcoin Taproot Upgrade Activates",
+      "desc": "Taproot introduced Schnorr signatures and more flexible scripting, laying the groundwork for later innovations like Ordinals."
+    },
+    {
       "date": "2022-02-02",
       "cat": "security",
       "imp": "minor",
@@ -197,6 +311,13 @@
       "imp": "major",
       "title": "Terra / LUNA Collapse",
       "desc": "UST de-pegged and entered a death spiral, wiping out tens of billions in days — a systemic turning point for the industry."
+    },
+    {
+      "date": "2022-06-13",
+      "cat": "market",
+      "imp": "major",
+      "title": "Celsius & Three Arrows Capital Collapse",
+      "desc": "Lending platform Celsius froze withdrawals and hedge fund Three Arrows Capital was liquidated soon after, triggering a cascading credit crisis across the industry."
     },
     {
       "date": "2022-09-15",
@@ -227,11 +348,25 @@
       "desc": "Circle's $3.3B in reserves were trapped in the failed bank; USDC dropped to $0.87 before federal intervention restored the peg."
     },
     {
+      "date": "2023-04-12",
+      "cat": "protocol",
+      "imp": "minor",
+      "title": "Ethereum Shanghai Upgrade Enables Withdrawals",
+      "desc": "The Shapella upgrade let staked ETH on the Beacon Chain be withdrawn for the first time, completing a key piece of the proof-of-stake system."
+    },
+    {
       "date": "2023-06-05",
       "cat": "regulation",
       "imp": "major",
       "title": "SEC Sues Binance & Coinbase",
       "desc": "The SEC sued both exchanges in the same month, alleging they operated unregistered securities trading platforms."
+    },
+    {
+      "date": "2023-06-15",
+      "cat": "adoption",
+      "imp": "major",
+      "title": "BlackRock Files for Spot Bitcoin ETF",
+      "desc": "The world's largest asset manager's filing was seen as a pivotal signal of shifting institutional sentiment, paving the way for approval the following year."
     },
     {
       "date": "2023-11-21",
@@ -246,6 +381,13 @@
       "imp": "major",
       "title": "Spot Bitcoin ETFs Approved",
       "desc": "BlackRock, Fidelity, and others received approval to list spot Bitcoin ETFs in the US, opening a compliant channel for traditional capital."
+    },
+    {
+      "date": "2024-03-13",
+      "cat": "protocol",
+      "imp": "minor",
+      "title": "Ethereum Dencun Upgrade",
+      "desc": "EIP-4844 introduced blob data, sharply cutting the cost of publishing data for Layer-2 networks."
     },
     {
       "date": "2024-04-20",
@@ -267,6 +409,13 @@
       "imp": "major",
       "title": "Spot Ethereum ETFs Launch",
       "desc": "Following Bitcoin, spot Ethereum ETFs received approval and began trading on US exchanges."
+    },
+    {
+      "date": "2024-12-30",
+      "cat": "regulation",
+      "imp": "major",
+      "title": "EU's MiCA Fully Takes Effect",
+      "desc": "The Markets in Crypto-Assets regulation completed its final implementation phase, requiring crypto asset service providers to hold a unified EU-wide license."
     },
     {
       "date": "2025-02-21",

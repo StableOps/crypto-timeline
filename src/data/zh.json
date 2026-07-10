@@ -1,19 +1,35 @@
 {
-  "icons": {
-    "protocol": "<path d=\"M12 3 3 8l9 5 9-5-9-5Z\"/><path d=\"M3 13l9 5 9-5\"/>",
-    "regulation": "<path d=\"M12 3 3 10h18L12 3Z\"/><path d=\"M6 10v10\"/><path d=\"M18 10v10\"/><path d=\"M4 21h16\"/>",
-    "security": "<path d=\"M12 3l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6l7-3Z\"/><path d=\"M9 12l2 2 4-4\"/>",
-    "market": "<rect x=\"4\" y=\"10\" width=\"3\" height=\"8\" rx=\"0.6\"/><rect x=\"10.5\" y=\"5\" width=\"3\" height=\"13\" rx=\"0.6\"/><rect x=\"17\" y=\"8\" width=\"3\" height=\"10\" rx=\"0.6\"/>",
-    "stablecoin": "<circle cx=\"12\" cy=\"12\" r=\"8.5\"/><path d=\"M8 10.5h8\"/><path d=\"M8 13.5h8\"/>",
-    "adoption": "<path d=\"M5 21V4\"/><path d=\"M5 5h13l-3 3.5L18 12H5\"/>"
-  },
   "categories": [
-    { "key": "protocol", "label": "协议里程碑", "color": "#0d9488" },
-    { "key": "regulation", "label": "监管政策", "color": "#2563eb" },
-    { "key": "security", "label": "安全事件", "color": "#e11d48" },
-    { "key": "market", "label": "市场周期", "color": "#b45309" },
-    { "key": "stablecoin", "label": "稳定币", "color": "#16a34a" },
-    { "key": "adoption", "label": "机构与采用", "color": "#a21caf" }
+    {
+      "key": "protocol",
+      "label": "协议里程碑",
+      "color": "#0d9488"
+    },
+    {
+      "key": "regulation",
+      "label": "监管政策",
+      "color": "#2563eb"
+    },
+    {
+      "key": "security",
+      "label": "安全事件",
+      "color": "#e11d48"
+    },
+    {
+      "key": "market",
+      "label": "市场周期",
+      "color": "#b45309"
+    },
+    {
+      "key": "stablecoin",
+      "label": "稳定币",
+      "color": "#16a34a"
+    },
+    {
+      "key": "adoption",
+      "label": "机构与采用",
+      "color": "#a21caf"
+    }
   ],
   "events": [
     {
@@ -45,6 +61,13 @@
       "desc": "区块奖励由 50 BTC 降至 25 BTC，比特币通胀率首次显著降低。"
     },
     {
+      "date": "2013-10-02",
+      "cat": "regulation",
+      "imp": "major",
+      "title": "暗网市场「丝绸之路」被查封",
+      "desc": "美国联邦调查局关闭首个大型比特币暗网黑市并逮捕创始人，是执法机构首次大规模介入加密货币。"
+    },
+    {
       "date": "2013-12-05",
       "cat": "regulation",
       "imp": "major",
@@ -57,6 +80,13 @@
       "imp": "major",
       "title": "Mt. Gox 宣布破产",
       "desc": "约 85 万枚比特币下落不明，一度占全球流通量 7%，成为行业早期最大信任危机。"
+    },
+    {
+      "date": "2014-10-06",
+      "cat": "stablecoin",
+      "imp": "major",
+      "title": "Tether（USDT）发行上线",
+      "desc": "首个主流锚定美元的稳定币在比特币 Omni Layer 上发行，开创法币抵押型稳定币模式。"
     },
     {
       "date": "2015-07-30",
@@ -87,6 +117,27 @@
       "desc": "区块奖励由 25 BTC 降至 12.5 BTC，新增发行速度继续放缓。"
     },
     {
+      "date": "2016-08-02",
+      "cat": "security",
+      "imp": "major",
+      "title": "Bitfinex 交易所被盗",
+      "desc": "黑客利用多签钱包漏洞窃取约 12 万枚比特币，是当时规模最大的交易所安全事件之一。"
+    },
+    {
+      "date": "2017-08-01",
+      "cat": "protocol",
+      "imp": "minor",
+      "title": "比特币现金（BCH）硬分叉",
+      "desc": "围绕区块大小的扩容之争导致社区分裂，Bitcoin Cash 从比特币主链分叉而出。"
+    },
+    {
+      "date": "2017-08-24",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "SegWit 隔离见证激活",
+      "desc": "比特币通过隔离见证升级为区块腾出更多交易空间，并为闪电网络等二层方案铺路。"
+    },
+    {
       "date": "2017-09-04",
       "cat": "regulation",
       "imp": "major",
@@ -108,11 +159,53 @@
       "desc": "泡沫破裂后加密货币总市值一年内蒸发超过 80%，行业进入长期低迷调整期。"
     },
     {
+      "date": "2018-01-26",
+      "cat": "security",
+      "imp": "major",
+      "title": "Coincheck 交易所被盗",
+      "desc": "日本交易所因热钱包管理不当被盗约 5.3 亿美元 NEM 代币，成为当时史上最大规模交易所盗窃案。"
+    },
+    {
+      "date": "2018-05-31",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "波场（TRON）主网上线",
+      "desc": "TRON 从以太坊 ERC-20 代币迁移至独立主网，此后逐渐成为 USDT 转账的重要承载链。"
+    },
+    {
+      "date": "2018-09-26",
+      "cat": "stablecoin",
+      "imp": "major",
+      "title": "USD Coin（USDC）发行上线",
+      "desc": "Circle 与 Coinbase 联合发起的 Centre 联盟推出 USDC，成为合规透明稳定币的代表。"
+    },
+    {
+      "date": "2018-11-02",
+      "cat": "protocol",
+      "imp": "minor",
+      "title": "Uniswap 上线",
+      "desc": "基于恒定乘积公式的自动做市商协议 Uniswap 发布首个版本，开启去中心化交易所新范式。"
+    },
+    {
+      "date": "2019-06-18",
+      "cat": "stablecoin",
+      "imp": "major",
+      "title": "Facebook 发布 Libra 稳定币白皮书",
+      "desc": "社交巨头计划推出全球性稳定币引发各国监管强烈反弹，项目历经更名与瘦身后最终于 2022 年停止运营。"
+    },
+    {
       "date": "2020-03-12",
       "cat": "market",
       "imp": "major",
       "title": "「黑色星期四」加密市场暴跌",
       "desc": "新冠疫情引发全球金融市场恐慌，比特币单日暴跌近 50%，以太坊跌至约 90 美元。"
+    },
+    {
+      "date": "2020-03-16",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "Solana 主网测试网上线",
+      "desc": "以历史证明（PoH）机制主打高吞吐低费用的公链 Solana 正式上线主网测试网。"
     },
     {
       "date": "2020-05-11",
@@ -134,6 +227,20 @@
       "imp": "major",
       "title": "DeFi Summer 爆发",
       "desc": "流动性挖矿模式兴起，去中心化交易所与借贷协议锁仓量数月内暴涨数十倍。"
+    },
+    {
+      "date": "2020-10-21",
+      "cat": "adoption",
+      "imp": "major",
+      "title": "PayPal 开放加密货币买卖",
+      "desc": "主流支付巨头首次允许用户在平台内买卖比特币等加密资产，推动加密货币走向大众支付场景。"
+    },
+    {
+      "date": "2021-02-08",
+      "cat": "adoption",
+      "imp": "major",
+      "title": "特斯拉购入 15 亿美元比特币",
+      "desc": "特斯拉披露将比特币纳入公司资产负债表，成为大型上市公司加密资产配置的标志性事件。"
     },
     {
       "date": "2021-03-11",
@@ -178,6 +285,13 @@
       "desc": "价格触及约 6.9 万美元，机构资金与杠杆交易共同推高市场情绪。"
     },
     {
+      "date": "2021-11-14",
+      "cat": "protocol",
+      "imp": "major",
+      "title": "比特币 Taproot 升级激活",
+      "desc": "引入 Schnorr 签名与更灵活的智能合约脚本能力，为后续 Ordinals 等创新奠定基础。"
+    },
+    {
       "date": "2022-02-02",
       "cat": "security",
       "imp": "minor",
@@ -197,6 +311,13 @@
       "imp": "major",
       "title": "Terra/LUNA 算法稳定币崩盘",
       "desc": "UST 脱离锚定并进入死亡螺旋，数百亿美元市值数日内蒸发，成为行业系统性风险转折点。"
+    },
+    {
+      "date": "2022-06-13",
+      "cat": "market",
+      "imp": "major",
+      "title": "Celsius 与三箭资本相继爆雷",
+      "desc": "加密借贷平台 Celsius 冻结提现，对冲基金三箭资本随后清算破产，引发行业信贷危机连锁反应。"
     },
     {
       "date": "2022-09-15",
@@ -227,11 +348,25 @@
       "desc": "Circle 约 33 亿美元储备金被困于倒闭银行，USDC 一度跌至 0.87 美元，联邦介入后迅速恢复锚定。"
     },
     {
+      "date": "2023-04-12",
+      "cat": "protocol",
+      "imp": "minor",
+      "title": "以太坊上海升级开放质押提款",
+      "desc": "Shapella 升级使信标链质押的 ETH 首次可以提取，完善了权益证明体系的最后一环。"
+    },
+    {
       "date": "2023-06-05",
       "cat": "regulation",
       "imp": "major",
       "title": "SEC 起诉币安与 Coinbase",
       "desc": "美国证券交易委员会同月对两大交易所提起诉讼，指控其未注册证券交易平台。"
+    },
+    {
+      "date": "2023-06-15",
+      "cat": "adoption",
+      "imp": "major",
+      "title": "贝莱德提交比特币现货 ETF 申请",
+      "desc": "全球最大资管公司的申请被视为机构态度转变的关键信号，为次年 ETF 获批铺路。"
     },
     {
       "date": "2023-11-21",
@@ -246,6 +381,13 @@
       "imp": "major",
       "title": "SEC 批准首批比特币现货 ETF",
       "desc": "贝莱德、富达等多只比特币现货 ETF 获准在美国上市，为传统资金进入加密市场打开合规通道。"
+    },
+    {
+      "date": "2024-03-13",
+      "cat": "protocol",
+      "imp": "minor",
+      "title": "以太坊 Dencun 升级上线",
+      "desc": "EIP-4844 引入 Blob 数据结构，大幅降低 Layer2 网络的数据发布成本。"
     },
     {
       "date": "2024-04-20",
@@ -267,6 +409,13 @@
       "imp": "major",
       "title": "以太坊现货 ETF 上线交易",
       "desc": "继比特币之后，多只以太坊现货 ETF 获批并在美国交易所上市。"
+    },
+    {
+      "date": "2024-12-30",
+      "cat": "regulation",
+      "imp": "major",
+      "title": "欧盟 MiCA 法案全面生效",
+      "desc": "《加密资产市场监管法案》完成最后阶段实施，要求加密资产服务商在欧盟境内取得统一牌照。"
     },
     {
       "date": "2025-02-21",
